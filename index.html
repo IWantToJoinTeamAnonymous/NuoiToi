@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nuôi Tôi - Ủng hộ minh bạch 100%</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container row">
+      <div class="brand">Nuôi Tôi</div>
+      <nav class="nav">
+        <a href="#about">Về tôi</a>
+        <a href="#sao-ke">Sao kê</a>
+        <a class="btn" href="#ung-ho">Ủng hộ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="pill">Minh bạch 100%</div>
+        <h1>Ủng hộ tôi,<br/>không hối hận</h1>
+        <p class="muted">
+          Mọi đồng tiền bạn gửi đều được sao kê công khai. Không lấp liếm, không mập mờ, không biến mất bí ẩn.
+        </p>
+        <div class="row gap">
+          <a class="btn primary" href="#ung-ho">Ủng hộ ngay</a>
+          <a class="btn ghost" href="#sao-ke">Xem sao kê</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><div class="num" id="donors">0</div><div class="lbl">Người ủng hộ</div></div>
+          <div class="stat"><div class="num" id="transparency">0%</div><div class="lbl">Minh bạch</div></div>
+          <div class="stat"><div class="num" id="days">0</div><div class="lbl">ngày Hoạt động</div></div>
+        </div>
+
+        <div class="card">
+          <div class="row space">
+            <div>
+              <div class="muted">Mục tiêu tháng này</div>
+              <div class="big" id="goalText">0%</div>
+            </div>
+            <div class="muted" id="statusText">Đang phát triển</div>
+          </div>
+          <div class="bar"><div class="barFill" id="goalBar" style="width:0%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Giới thiệu</h2>
+        <h3>Tại sao nên nuôi tôi?</h3>
+
+        <div class="grid3">
+          <div class="card">
+            <h4>Minh bạch tuyệt đối</h4>
+            <p class="muted">Mọi giao dịch đều được ghi nhận và công khai. Bạn có thể kiểm tra bất cứ lúc nào.</p>
+          </div>
+          <div class="card">
+            <h4>Cập nhật hàng ngày</h4>
+            <p class="muted">Sao kê có thể tự động cập nhật theo lịch (ví dụ 06:00 mỗi ngày).</p>
+          </div>
+          <div class="card">
+            <h4>Biên lai tự động</h4>
+            <p class="muted">Có thể gửi email xác nhận (mình hướng dẫn ở phần “Nâng cấp miễn phí”).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sao-ke" class="section">
+      <div class="container">
+        <h2>Sao kê</h2>
+        <p class="muted">Cập nhật lần cuối: <span id="lastUpdated">—</span></p>
+
+        <div class="card">
+          <h3>Tiền của bạn đi đâu?</h3>
+          <div id="categories" class="cats"></div>
+        </div>
+
+        <div class="card">
+          <h3>Giao dịch gần đây</h3>
+          <div class="tableWrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Thời gian</th>
+                  <th>Nội dung</th>
+                  <th class="right">Số tiền</th>
+                </tr>
+              </thead>
+              <tbody id="txBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ung-ho" class="section">
+      <div class="container">
+        <h2>Ủng hộ</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>Chuyển khoản ngân hàng</h3>
+            <p class="muted">Ngân hàng: MB Bank</p>
+            <p class="muted">STK: <b>0987199439</b></p>
+            <p class="muted">Nội dung: <b>NUOITOI [Tên của bạn]</b></p>
+            <div class="qr muted">Bạn đặt ảnh QR vào /assets rồi nhúng ở đây</div>
+          </div>
+
+          <div class="card">
+            <h3>Momo</h3>
+            <p class="muted">Chuyển tiền nhanh qua ví Momo</p>
+            <a class="btn primary" href="#" onclick="alert('Thay link momo của bạn vào đây!')">Mở Momo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="muted">© 2026 Nuôi Tôi. Made with ❤️ in Vietnam.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
